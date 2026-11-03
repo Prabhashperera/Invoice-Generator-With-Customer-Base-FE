@@ -1,3 +1,21 @@
+export interface Paginated<T> {
+  data: T[];
+  meta: { page: number; limit: number; total: number; totalPages: number };
+}
+
+export interface Customer {
+  id: string;
+  name: string;
+  mobile: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface CustomerInput {
+  name: string;
+  mobile: string;
+}
+
 export interface Product {
   id: string;
   name: string;
